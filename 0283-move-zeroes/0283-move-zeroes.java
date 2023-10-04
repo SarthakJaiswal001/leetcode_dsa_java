@@ -1,21 +1,24 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-        int nonZeroIndex = 0; // Pointer to keep track of the current non-zero index
-
-    // Traverse the array
-    for (int i = 0; i < nums.length; i++) {
-        // If the current element is not 0, move it to the non-zero index
-        if (nums[i] != 0) {
-            nums[nonZeroIndex] = nums[i];
-            
-            // If there's a gap between non-zero elements and the current position,
-            // fill the gap with 0
-            if (nonZeroIndex != i) {
-                nums[i] = 0;
+      int j=-1;
+        int n=nums.length;
+        for(int i=0;i<n;i++){
+            if(nums[i]==0){
+                j=i;
+                break;
             }
-            
-            nonZeroIndex++; // Increment the non-zero index
+        }
+        
+        if(j==-1) return ;
+        
+        for(int i=j+1;i<n;i++){
+            if(nums[i]!=0){
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+                j++;
+            }
         }
     }
-    }
+    
 }
