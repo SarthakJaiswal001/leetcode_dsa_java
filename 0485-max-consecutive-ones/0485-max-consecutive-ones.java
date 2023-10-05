@@ -21,4 +21,4 @@ class Solution {
             return b;
         }
     }
-}
+}//tc will be big oh of n because we have done in single iteration
