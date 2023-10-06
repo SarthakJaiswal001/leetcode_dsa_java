@@ -8,5 +8,5 @@ class Solution {
     }
     return result;
         }
-    
+    //this is xor and most optimized solution
 }
