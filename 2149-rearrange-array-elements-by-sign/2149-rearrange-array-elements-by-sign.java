@@ -22,6 +22,7 @@ class Solution {
 
  
 //   return nums;
+        //optimized solution with less space complexity
         int n=nums.length;
         int[] arr=new int[n];
         int posnum=0,negnum=1;
