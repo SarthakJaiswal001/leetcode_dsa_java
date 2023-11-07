@@ -10,7 +10,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             // avoid the duplicates while moving i:
             if (i > 0 && nums[i] == nums[i - 1]) continue;
-            for (int j = i + 1; j < n-1; j++) {
+            for (int j = i + 1; j < n; j++) {
                 // avoid the duplicates while moving j:
                 if (j > i + 1 && nums[j] == nums[j - 1]) continue;
 
