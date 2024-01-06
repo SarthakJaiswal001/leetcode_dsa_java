@@ -1,5 +1,6 @@
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
+       //Extended Boyer Moore’s Voting Algorithm
         int n=nums.length;
         int cnt1=0;
         int cnt2=0;
