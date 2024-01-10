@@ -14,3 +14,16 @@ public class Solution {
         return sum;
     }
 }
+//for recursive solution
+public class Solution {
+    public static long sumFirstN(long n) {
+        // Write your code here.
+      if(n<=1){
+return 1;
+      }  
+      else{
+          return n+sumFirstN(n-1);
+      }
+      
+    }
+}
